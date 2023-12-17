@@ -1,0 +1,93 @@
+:root {
+    --background-color: #f4f4f4;
+    --main-background-color: white;
+    --main-shadow: rgba(0, 0, 0, 0.1);
+    --text-color: #333;
+    --label-color: #666;
+    --input-border: #ddd;
+    --button-bg-color: #2978f0;
+    --button-bg-hover: #2978f0;
+    --reset-button-bg: #d9534f;
+    --reset-button-hover: #c9302c;
+    --link-color: #337ab7;
+    --link-hover-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--main-background-color);
+    box-shadow: 0 0 10px var(--main-shadow);
+}
+
+#content {
+    padding: 20px;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--label-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--button-bg-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-bg-hover);
+}
+
+button[type="reset"] {
+    background-color: var(--reset-button-bg);
+}
+
+button[type="reset"]:hover {
+    background-color: var(--reset-button-hover);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: var(--link-hover-decoration);
+}

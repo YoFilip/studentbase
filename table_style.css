@@ -1,0 +1,89 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --text-color: #333;
+    --table-header-bg: #217ef8;
+    --table-header-color: white;
+    --table-row-even-bg: #f2f2f2;
+    --table-row-hover-bg: #ddd;
+    --table-border-color: #ddd;
+    --link-color: #337ab7;
+    --link-hover-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid var(--table-border-color);
+}
+
+th {
+    background-color: var(--table-header-bg);
+    color: var(--table-header-color);
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 17px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-row-even-bg);
+}
+
+tr:hover {
+    background-color: var(--table-row-hover-bg);
+}
+
+#studentsTable {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+select, button {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--table-header-bg);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--table-header-bg);
+}
+#resetButton{
+    background-color: red;
+}
+
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: var(--link-hover-decoration);
+}
